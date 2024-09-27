@@ -13,9 +13,8 @@
         
 //           }
 // }
-
-
-
+// ............................................................................................
+// Make a function to check if a number is prime or not.
 import java.util.Scanner;
 
 public class Functions {
