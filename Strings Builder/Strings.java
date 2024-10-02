@@ -118,22 +118,22 @@
 // olleh
 // ............................................................................................
 // Reverse a String (using StringBuilder class) --> O(n) Space Complexity Approach
-public class Strings {
-    public static void main(String[] args) {
-        String original = "hello";
-        StringBuilder reversed = new StringBuilder();
+// public class Strings {
+//     public static void main(String[] args) {
+//         String original = "hello";
+//         StringBuilder reversed = new StringBuilder();
 
-        // Reverse the string by appending characters to the new StringBuilder
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed.append(original.charAt(i));
-        }
+//         // Reverse the string by appending characters to the new StringBuilder
+//         for (int i = original.length() - 1; i >= 0; i--) {
+//             reversed.append(original.charAt(i));
+//         }
 
-        System.out.print(reversed);  // Output: "olleh"
-    }
-}
+//         System.out.print(reversed);
+//     }
+// }
 
 // output:
-
+// olleh
 // ............................................................................................
 // public class Strings{
 //     public static void main(String[] args) {
