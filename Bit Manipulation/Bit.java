@@ -105,47 +105,33 @@
 // 1) Bit Mask: 1<<i
 // 2) Operation: OR (set)
 
-import java.util.*;
-public class Bit{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int oper = sc.nextInt();
-        // open = 1: set open = 0: clear
-        int n=5;  // 0 1 0 1 --> 0 1 1 1 --> dec 7
-        int pos = 1;
-        int bitMask = 1<<pos;
+// import java.util.*;
+// public class Bit{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int oper = sc.nextInt();
+//         // open = 1: set open = 0: clear
+//         int n=5;  // 0 1 0 1 --> 0 1 1 1 --> dec 7
+//         int pos = 1;
+//         int bitMask = 1<<pos;
 
-        if(oper == 1) {
-            // set
-            int newNumber = bitMask | n;
-            System.out.println(newNumber);
-        } else {
-            // clear
-            int newBitMask = ~(bitMask);
-            int newNumber = newBitMask & n;
-            System.out.println(newNumber);
-        }
+//         if(oper == 1) {
+//             // set
+//             int newNumber = bitMask | n;
+//             System.out.println(newNumber);
+//         } else {
+//             // clear
+//             int newBitMask = ~(bitMask);
+//             int newNumber = newBitMask & n;
+//             System.out.println(newNumber);
+//         }
 
-        sc.close();
-    }
-}
+//         sc.close();
+//     }
+// }
 
 // input:
 // 1
 
 // output:
 // 7
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
-
-
