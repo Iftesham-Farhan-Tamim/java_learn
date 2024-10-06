@@ -69,12 +69,12 @@
 // public class Recursion {
 //     public static void printFactorial(int n, int fact) {
 //         if(n == 0) {
-//         System.out.println(fact);
-//         return;
+//             System.out.println(fact);
+//             return;
 //         }
 
-//     fact *= n;
-//     printFactorial(n-1, fact);
+//         fact *= n;
+//         printFactorial(n-1, fact);
 //     }
 //     public static void main(String args[]) {
 //         printFactorial(5, 1);
@@ -108,33 +108,25 @@
 // 3
 // ............................................................................................
 // Print x^n (with stack height = n)
-public class Recursion {
-    public static int printPower(int x, int n) {
-        if(n == 0) {
-            return 1;
-        }
-        if(x == 0) {
-        return 0;
-        }
+// public class Recursion {
+//     public static int printPower(int x, int n) {
+//         if(n == 0) {
+//             return 1;
+//         }
+//         if(x == 0) {
+//             return 0;
+//         }
     
-        int x_ = printPower(x, n-1);
-        int xn = x * x_;
-        return xn;
-    }
-    public static void main(String args[]) {
-        int x = 2, n = 5;
-        int output = printPower(x, n);
-        System.out.println(output);
-    }
-}
+//         int x_ = printPower(x, n-1);
+//         int xn = x * x_;
+//         return xn;
+//     }
+//     public static void main(String args[]) {
+//         int x = 2, n = 5;
+//         int output = printPower(x, n);
+//         System.out.println(output);
+//     }
+// }
 
 // output:
-
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
-// ............................................................................................
-
+// 32
