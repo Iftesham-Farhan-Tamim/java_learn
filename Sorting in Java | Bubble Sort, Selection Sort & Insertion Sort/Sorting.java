@@ -1,3 +1,7 @@
+// ---------> (i++)/(j++)
+// <--------- (i--)/(j--)
+
+
 // package Sorting in Java | Bubble Sort, Selection Sort & Insertion Sort;
 
 // 1) Bubble Sort
@@ -35,7 +39,7 @@
 // and places the elements in increasing order. 
 // Time complexity: O(N^2) 
 
-// public class Main{
+// public class Sorting{
 //     public static void main(String[] args) {
 //         int arr[] = {7, 8, 1, 3, 2};
 //         for(int i=0; i<arr.length-1; i++) {
@@ -61,3 +65,66 @@
 //     }
 // }
 // ............................................................................................
+// Insertion Sort
+// Idea: Take an element from the unsorted array, place it in its corresponding 
+// position in the sorted part, and shift the elements accordingly. 
+// Time Complexity: O(N^2) 
+
+// public class Sorting{
+//     public static void InsertionSort(int[] a) {
+//         int n = a.length;
+//         for(int i = 1; i<n; i++) {
+//             int j = i;
+            
+//             while(j>0 && a[j] < a[j-1]) {
+//                 // swap
+//                 int temp = a[j];
+//                 a[j] = a[j-1];
+//                 a[j-1] = temp;
+//                 j--;
+//             }
+//         }
+//     }
+    
+//     public static void main(String[] args) {
+//         int a[] = {8,3,6,5,4,2};
+//         InsertionSort(a);
+//         // for(int val : a) {
+//         //     System.out.print(val + " ");
+//         // }
+//         for(int i=0; i<a.length; i++) {
+//             System.out.print(a[i] + " ");
+//         }
+//     }
+// }
+
+// output:
+// 2 3 4 5 6 8
+// ............................................................................................
+// Insertion Sort
+// Simple way
+
+// public class Sorting{
+//     public static void main(String[] args) {
+//         int a[] = {8,3,6,5,4,2};
+        
+//         for(int i=1; i<a.length; i++) {
+//             int j = i;
+            
+//             while(j>0 && a[j-1] > a[j]) {
+//                 // swap
+//                 int temp = a[j-1];
+//                 a[j-1] = a[j];
+//                 a[j] = temp;
+//                 j--;
+//             }
+//         }
+        
+//         for(int i=0; i<a.length; i++) {
+//             System.out.print(a[i] + " ");
+//         }
+//     }
+// }
+
+// output:
+// 2 3 4 5 6 8

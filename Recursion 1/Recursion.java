@@ -130,3 +130,47 @@
 
 // output:
 // 32
+// ............................................................................................
+// Print x^n (with stack height = n)....(2nd methode)
+// public class Recursion{
+//     public static int calcPower(int x, int n) {
+//         if(n==0) {
+//             return 1;
+//         }
+//         if(x==0) {
+//             return 0;
+//         }
+//         int xPownm1 = calcPower(x, n-1);
+//         int xPown = x * xPownm1;
+//         return xPown;
+//     }
+    
+//     public static void main(String[] args) {
+//         int x = 2, n = 5;
+//         int ans = calcPower(x, n);
+//         System.out.println(ans);
+//     }
+// }
+// ............................................................................................
+public class Recursion {
+    public static int printPower(int x, int n) {
+        if(n == 0) {
+            return 1;
+        }
+        if(n % 2 == 0) {
+            return printPower(x, n/2) * printPower(x, n/2);
+        }
+        else {
+            return x * printPower(x, n/2) * printPower(x, n/2);
+        }
+    }
+
+    public static void main(String args[]) {
+        int x = 2, n = 5;
+        int output = printPower(x, n);
+        System.out.println(output);
+    }
+}
+
+// output:
+// 32
